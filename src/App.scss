@@ -1,0 +1,212 @@
+@import './assets/sass/theme.scss';
+@import './react/components/common/common.scss';
+@import './assets/sass/fabric-icons-inline.scss';
+
+.app {
+  &-shell {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+  }
+
+  &-main {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      overflow: auto;
+  }
+
+  &-navbar, &-sidebar {
+      .ms-Icon {
+        color: #ccc;
+        &:hover {
+            color: #fff;
+        }
+    }
+  }
+
+  &-navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-height: 40px;
+      line-height: 40px;
+
+
+      ul, li {
+          margin: 0;
+          padding: 0;
+      }
+
+      li {
+          list-style-type: none;
+
+          a {
+              display: inline-block;
+              padding: 0 10px;
+              max-height: 40px;
+
+              &.active, &:hover {
+                .ms-Icon {
+                    color: #fff;
+                }
+                background-color: #666;
+              }
+          }
+      }
+
+      &-logo {
+          font-size: 20px;
+
+          .ms-Icon {
+              color: $color-green;
+          }
+      }
+
+      &-brand {
+          flex-grow: 1;
+          padding: 0 10px;
+      }
+  }
+
+  &-sidebar {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+
+      &-fill {
+          flex-grow: 1;
+      }
+
+      ul {
+          padding: 0;
+          margin: 0;
+      }
+
+      li {
+          display: block;
+          text-align: center;
+
+          a, span {
+              display: inline-block;
+              width: 45px;
+              padding: 5px 10px;
+
+              &.active, &:hover {
+                .ms-Icon {
+                    color: #fff;
+                }
+                background-color: $lighter-3;
+              }
+
+              &.disabled {
+                  opacity: 0.25;
+
+                  &:hover {
+                      background-color: transparent;
+                  }
+
+                  &.ms-Icon {
+                    color: transparent;
+                  }
+              }
+          }
+      }
+  }
+
+  &-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+  }
+}
+
+.app-help-menu-icon {
+  color: #ccc;
+  display: inline-block;
+
+  &:hover {
+      color: #fff;
+      background-color: $lighter-2;
+      cursor: pointer;
+  }
+}
+
+.Toastify .frtt-toast-container {
+  top: 3em;
+}
+
+.ms-Icon {
+  font-size: 1em;
+}
+.icon-2x {
+    font-size: 2em;
+}
+.icon-3x {
+    font-size: 3em;
+}
+
+.icon-4x {
+    font-size: 4em;
+}
+.icon-5x {
+    font-size: 5em;
+}
+.icon-6x {
+    font-size: 6em;
+}
+.icon-7x {
+    font-size: 7em;
+}
+.icon-8x {
+    font-size: 8em;
+}
+
+.icon-9x {
+    font-size: 9em;
+}
+
+.ms-Icon-18px {
+    font-size: 18px;
+}
+.ms-Icon-25px{
+    font-size: 25px;
+}
+
+.ms-Spinner-label  {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.form-control {
+    height: 32px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+}
+
+.app-delete-button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    height: 20px;
+    padding: 0px;
+    &:hover {
+        background-color: transparent;
+        color: #e6e4e4;
+    }
+    &:focus {
+        background-color: transparent;
+        color: #e6e4e4;
+    }
+}
+
+.app-delete-icon {
+    height: 18px;
+}

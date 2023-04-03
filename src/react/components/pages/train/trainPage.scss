@@ -1,0 +1,89 @@
+@import '../../../../assets/sass/theme.scss';
+
+.train-page {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: 10px; // Not sure why it helps
+    user-select: text;
+}
+
+.train-page-main {
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: 80px auto;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.train-page-menu {
+    display: flex;
+    width: 400px;
+    overflow: auto;
+}
+
+.train-message {
+    max-width: 20em;
+}
+
+.train-accuracy-table-container {
+    height: 100%;
+    .accuracy-table {
+        width: 100%;
+        th, td {
+            border-top: #999 1px solid;
+        }
+        &:first-child {
+            border-top: #999 2px solid;
+        }
+        &:last-child {
+            border-bottom: #999 2px solid;
+        }
+        .tag-name {
+            max-width: calc(100vw - 550px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.train-chart-container {
+    position: relative;
+    height: 95%;
+    width: 100%;
+    .train-chart {
+        background: #fff !important;
+    }
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+.is-spinning {
+    animation: spinner 2s linear infinite;
+}
+
+.accuracy-info {
+    margin-top: 10px;
+
+    span {
+        margin-left: 6px;
+    }
+}
+
+.train-notification {
+    font-size: smaller;
+    padding: 10px 20px;
+    &-text {
+        padding-left:4px;
+    }
+}
+
+.label-folder-url-input {
+    margin-bottom: 5px;
+}
+
+.training-spinner {
+    margin-top: 1rem;
+}

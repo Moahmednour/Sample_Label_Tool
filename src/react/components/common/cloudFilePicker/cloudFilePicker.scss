@@ -1,0 +1,22 @@
+.shared-string-input-container {
+    padding: 1rem;
+    .input-uri {
+        padding: 1rem 1rem 0 1rem;
+        .form-control{
+            font-size: 90%;
+        }
+    }
+    .error-message {
+        color: #db7272;
+        padding: 4px 1rem 1rem 1rem;
+    }
+}
+
+.separator {
+    margin: 0 1rem;
+    div{
+        background-color: #32383e;
+        color: white;
+        font-weight: 600;
+    }
+}

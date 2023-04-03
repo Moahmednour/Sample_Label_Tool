@@ -1,0 +1,22 @@
+.prediction-file-picker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .title {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    .container-space-between {
+        flex: 1;
+    }
+
+    .source-dropdown {
+        width: 95px;
+    }
+    
+    .local-file {
+        float: right;
+        flex: 1;
+    }
+}

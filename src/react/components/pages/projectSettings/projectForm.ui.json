@@ -1,0 +1,23 @@
+{
+    "name": {
+        "ui:autofocus": true
+    },
+    "securityToken": {
+        "ui:field": "securityToken"
+    },
+    "description": {
+        "ui:widget": "textarea"
+    },
+    "sourceConnection": {
+        "ui:field": "sourceConnection"
+    },
+    "targetConnection": {
+        "ui:field": "targetConnection"
+    },
+    "apiKey": {
+        "ui:widget": "protectedInput"
+    },
+    "apiVersion": {
+        "ui:widget": "apiVersion"
+    }
+}

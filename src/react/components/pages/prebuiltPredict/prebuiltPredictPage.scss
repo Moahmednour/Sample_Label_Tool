@@ -1,0 +1,28 @@
+.formtype-section {
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+.locales-section {
+    width: 50%;
+    float: right;
+    padding-right: 5px;
+}
+.predict-button {
+    margin-top: 12px;
+    .ms-Button-icon {
+        color: rgb(120, 173, 14);
+    }
+}
+
+.request-uri-textfield {
+    textarea {
+        word-break: break-all;
+    }
+}
+
+.predict-mode-toggle {
+    label {
+        color: rgb(250, 251, 251);
+    }
+}

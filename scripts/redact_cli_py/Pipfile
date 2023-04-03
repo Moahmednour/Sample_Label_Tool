@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pillow = "*"
+jsonpointer = "*"
+shapely = "*"
+dacite = "*"
+azure-storage-blob = "*"
+pypdfium = "*"
+flake8 = "*"
+black = "*"
+flake8-bugbear = "*"
+flake8-pie = "*"
+pep8-naming = "*"
+flake8-black = "*"
+
+[dev-packages]
+pytest = "*"
+
+[requires]
+python_version = "3.9"
